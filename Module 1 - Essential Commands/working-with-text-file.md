@@ -25,7 +25,7 @@ vim has a very usefull tutorial **vimtutor** which you access by the command: `v
 `cat` has some nice options:
 
 - `-A` shows all non-printable characters
-- `-b` nimbers lines
+- `-b` numbers lines
 - `-n` numbers lines except empty lines5
 - `-s` suppress repeated empty lines
 
@@ -47,3 +47,4 @@ vim has a very usefull tutorial **vimtutor** which you access by the command: `v
 - `-B5` show line that matches the pattern as well as the 5 lines before
 - `-C5`combined -A5 and -B5
 - `-R`recursively search pattern
+- `-E` use extended regular expression
