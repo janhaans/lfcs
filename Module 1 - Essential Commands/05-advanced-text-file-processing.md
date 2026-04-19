@@ -13,9 +13,9 @@
 - Regex's are used in tools such as `grep`, `aws` and `sed`
 - When searching text with a regex, then use `grep -E`
 
-Regular Expression Tutorial: [RegexLearn](https://regexlearn.com/learn/regex101) (includes practices)
+[Regular Expression Tutorial](https://regexlearn.com/learn/regex101) (includes practices)
 
-Regular Expression Cheatsheet: [https://regexlearn.com/cheatsheet](https://regexlearn.com/cheatsheet)
+[Regular Expression Cheatsheet](https://regexlearn.com/cheatsheet)
 
 # Using tr
 
@@ -35,7 +35,7 @@ Regular Expression Cheatsheet: [https://regexlearn.com/cheatsheet](https://regex
 - `awk -F : 'length($0)>60 {print $1}' /etc/passwd` print the first column of the lines in /etc/passwd that are longer then 60 characters
 - `awk -F : '/student/ {print $1}' /etc/passwd` print the first column of the lines in /etc/passwd that matches the regex
 
-[AWK tutorial](https://leapcell.medium.com/awk-basics-tutorial-5257e9bd9cb9)
+[AWK tutorial](https://tldp.org/LDP/Bash-Beginners-Guide/html/chap_06.html)
 
 # Getting started with sed
 
@@ -45,4 +45,4 @@ Regular Expression Cheatsheet: [https://regexlearn.com/cheatsheet](https://regex
 - `sed -i 2d text.txt` Delete second line in file text.txt
 - `for i in \*.txt; do sed -i 's/old/new/g' $i; done` Loop where in all files with extend "txt" word "old" is replaced with word "new"
 
-[SED tutorial](https://www.digitalocean.com/community/tutorials/linux-sed-command)
+[SED tutorial](https://tldp.org/LDP/Bash-Beginners-Guide/html/chap_05.html)
