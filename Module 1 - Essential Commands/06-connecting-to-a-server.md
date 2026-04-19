@@ -57,7 +57,7 @@ The system reads the /etc/sudoers file from beginning to end. Therefore, if the 
 To preserve the rules during system updates and for easier fixing of errors, enter new rules by creating new files in the /etc/sudoers.d/ directory instead of entering rules directly to the /etc/sudoers file. The system reads the files in the /etc/sudoers.d directory when it reaches the following line in the /etc/sudoers file:
 
 ```
-includedir /etc/sudoers.d
+#includedir /etc/sudoers.d
 ```
 
 Note that the number sign (#) at the beginning of this line is part of the syntax and does not mean the line is a comment. The names of files in that directory must not contain a period and must not end with a tilde (~).
