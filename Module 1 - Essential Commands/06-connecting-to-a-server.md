@@ -28,10 +28,13 @@
 
 # Sudo configuration
 
-- Use `visudo` to open `/etc/sudoers` configuration file and validates the changes before saving.
+- Use `visudo` to open `/etc/sudoers` configuration file and to validate the changes before saving.
 - Alternatively, add drop-in files in `/etc/sudoers.d` directory
 - Add following line to `/etc/sudoers` configuration file to cache the `sudo` credentials for 4 hours
-  `Defaults timestamp_type=global,timestamp_timeout=240`
+
+```
+Defaults timestamp_type=global,timestamp_timeout=240
+```
 
 Use `visudo` to add an new `sudo` configuration in `/etc/sudoers` by using the following format:
 
