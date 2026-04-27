@@ -34,6 +34,7 @@
 - `awk 'length($0)>60' /etc/passwd` print the lines in /etc/passwd that are longer then 60 characters
 - `awk -F : 'length($0)>60 {print $1}' /etc/passwd` print the first column of the lines in /etc/passwd that are longer then 60 characters
 - `awk -F : '/student/ {print $1}' /etc/passwd` print the first column of the lines in /etc/passwd that matches the regex
+- `ps -aux | awk '{print $1}' | sort | uniq` print the active users
 
 [AWK tutorial](https://tldp.org/LDP/Bash-Beginners-Guide/html/chap_06.html)
 
